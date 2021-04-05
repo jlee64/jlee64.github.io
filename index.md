@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Jooho Lee
-subtitle: 
+title: 
+subtitle: Jooho Lee
 cover-img: /assets/img/Pauline.jpg
 ---
 
