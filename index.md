@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Jooho Lee, Associate Professorr
-subtitle: School of Public Administration, University of Nebraska at Omaha
+title: 
+subtitle: 
 cover-img: /assets/img/Pauline.jpg
 ---
 
