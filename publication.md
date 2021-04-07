@@ -13,5 +13,6 @@ title: Publication
 ### Book Chapter
 
 
-[Google Scholar](https://scholar.google.com/citations?user=uLQtUOgAAAAJ&hl=en) and [Research Gate](https://www.researchgate.net/profile/Jooho-Lee).
+[Google Scholar](https://scholar.google.com/citations?user=uLQtUOgAAAAJ&hl=en) 
+[Research Gate](https://www.researchgate.net/profile/Jooho-Lee).
 
