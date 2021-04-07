@@ -1,0 +1,41 @@
+---
+title: "Median Household Income"
+subtitle: "(2015-2019)"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Median Household Income in Nebraska
+
+Douglas, Sarpy, and Lancaster Counties between 2015-2019
+Source: American Community Survey (2015-2019)
+## R code
+
+B19013_001: Median Household Income
+
+```{r ne_income_5, echo=F}
+years <- lst(2015, 2016, 2017, 2018, 2019)
+
+ne_income_5 <- map_dfr(years, ~ get_acs(geography = "county",
+                                          variables = "B19013_001", 
+                                          state = "NE",
+                                          survey = "acs1",
+                                          year=.x),
+                        .id="year")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r ne_income_5, echo=FALSE}
+ggplot(data=ne_income_5, aes(x=year, y=estimate, colour=NAME, group=NAME))+
+  geom_line()+
+  geom_point(size=3)+
+  ggtitle("Median Household Income (2015-2019)")
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
